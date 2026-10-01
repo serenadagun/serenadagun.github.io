@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Serena Dagun · Ingénieure sûreté et certification</title>
+<meta name="description" content="Serena Dagun, ingénieure sûreté de fonctionnement et certification (aéronautique, automobile, ferroviaire). CV, parcours, projets et contact.">
+<!-- Production: you may self-host these fonts later (see guide). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: bento grid of rounded white cards on a soft grey ground (12 columns desktop, 1 column phone).
+   One lavender card (standards) and one teal card (what I am looking for) carry the colour; everything else is black on white. */
+:root{
+  --bg:#ECECEF;
+  --card:#FFFFFF;
+  --ink:#111214;
+  --muted:#6B6E76;
+  --line:#E4E4E8;
+  --black:#151517;
+  --lav-1:#ECEBFE;
+  --lav-2:#B9B5F7;
+  --lav-ink:#2A2570;
+  --teal:#0E7A84;
+  --teal-soft:#DDF0F1;
+  --amber-soft:#FBEFDC; --amber-ink:#7A4A0A;
+  --violet-soft:#EFEBFA; --violet-ink:#58468F;
+  --f-sans:"Geist", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --f-mono:"Geist Mono", ui-monospace, Menlo, Consolas, monospace;
+  --r-card:28px; --r-inner:18px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--f-sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+html[data-lang="fr"] .en, html[data-lang="en"] .fr{display:none!important}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--lav-2);outline-offset:3px}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.025em;line-height:1.05;text-wrap:balance}
+p{margin:0}
+.page{max-width:1240px;margin:0 auto;padding-inline:16px;padding-block:16px 40px}
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}
+.card{background:var(--card);border-radius:var(--r-card);padding:28px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.s12{grid-column:span 12}.s8{grid-column:span 8}.s7{grid-column:span 7}.s6{grid-column:span 6}.s5{grid-column:span 5}.s4{grid-column:span 4}.s3{grid-column:span 3}.s2{grid-column:span 2}
+@media (max-width:1020px){.s7,.s5,.s8{grid-column:span 12}.s4{grid-column:span 6}.s3{grid-column:span 6}.s2{grid-column:span 6}}
+@media (max-width:640px){.bento>*{grid-column:span 12!important}.card{padding:22px;border-radius:22px}}
+.eyebrow{font:500 .74rem/1.2 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 20px;font:500 .95rem var(--f-sans);text-decoration:none;cursor:pointer;border:0;white-space:nowrap}
+.btn-black{background:var(--black);color:#fff;box-shadow:0 6px 16px rgba(17,18,20,.18)}
+.btn-black:hover{background:#2A2A2E}
+.btn-light{background:#F2F2F5;color:var(--ink)}
+.btn-light:hover{background:#E7E7EC}
+.btn svg{width:17px;height:17px}
+
+/* nav */
+.nav{grid-column:span 12;background:var(--card);border-radius:22px;padding:12px 12px 12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:10;box-shadow:0 2px 12px rgba(17,18,20,.05)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.02em;text-transform:uppercase;font-size:.88rem;text-decoration:none}
+.mark{width:32px;height:32px;border-radius:50%;background:var(--black);color:#fff;display:grid;place-items:center;font:600 .78rem var(--f-sans);letter-spacing:.02em}
+.nav-links{display:flex;gap:22px;font-size:.92rem}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.nav-right{display:flex;align-items:center;gap:8px}
+.seg{display:inline-flex;background:#F2F2F5;border-radius:999px;padding:3px}
+.seg button{font:500 .78rem var(--f-mono);border:0;background:transparent;color:var(--muted);padding:7px 11px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:440px){.nav .btn{display:none}}
+
+/* hero */
+.hero{grid-row:span 2;padding:40px 40px 36px;justify-content:space-between;gap:28px}
+.avail{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:var(--teal-soft);color:var(--teal);font:500 .78rem var(--f-mono);letter-spacing:.04em;text-transform:uppercase;padding:7px 13px;border-radius:999px}
+.avail::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal)}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.6rem);letter-spacing:-.045em;line-height:.98;font-weight:600}
+.hero h1 .soft{color:#A3A5AD}
+.hero .intro{max-width:52ch;color:#45474E;font-size:1rem}
+.hero .actions{display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:640px){.hero{padding:26px 22px}}
+
+/* profile card */
+.profile{justify-content:space-between}
+.profile h3{font-size:1.25rem;letter-spacing:-.02em}
+.route{position:relative;display:flex;flex-direction:column;gap:12px;padding-left:22px;margin:4px 0}
+.route::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:repeating-linear-gradient(to bottom,var(--ink) 0 6px,transparent 6px 10px)}
+.stop{position:relative;display:flex;justify-content:space-between;gap:10px;font-size:.9rem}
+.stop::before{content:"";position:absolute;left:-21px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--card);border:2px solid var(--ink)}
+.stop.now::before{background:var(--teal);border-color:var(--teal)}
+.stop .yr{font:400 .8rem var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.langs{display:flex;gap:6px;flex-wrap:wrap}
+.pill{font:500 .74rem var(--f-mono);padding:6px 10px;border-radius:999px;background:#F2F2F5;color:#3D3F45}
+
+/* photo */
+.photo{padding:0;overflow:hidden;position:relative;min-height:280px;background:linear-gradient(160deg,#DCDDE3,#C9CAD2)}
+.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.photo .fallback{position:absolute;inset:0;display:grid;place-items:center;font:600 3.4rem var(--f-sans);color:#fff;letter-spacing:-.04em}
+
+/* standards gradient */
+.stds{background:linear-gradient(120deg,var(--lav-1) 0%,var(--lav-2) 100%);color:var(--lav-ink);justify-content:space-between}
+.stds p.eyebrow{color:var(--lav-ink);opacity:.75}
+.stds .row{display:flex;flex-wrap:wrap;gap:6px 18px;font:600 1.05rem var(--f-sans);letter-spacing:-.01em}
+.stds .row span{white-space:nowrap}
+
+/* link circles */
+.links{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-content:center;padding:18px}
+.circle{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;font-size:.74rem;color:var(--muted);background:transparent;border:0;cursor:pointer;font-family:var(--f-sans)}
+.circle span.ic{width:54px;height:54px;border-radius:50%;background:var(--card);box-shadow:0 3px 12px rgba(17,18,20,.09);display:grid;place-items:center;color:var(--ink);transition:transform .15s}
+.circle:hover span.ic{transform:translateY(-2px)}
+.circle svg{width:22px;height:22px}
+.links.card{background:transparent;box-shadow:none}
+
+/* CV selector */
+.cvsel h2{font-size:clamp(1.6rem,3vw,2.2rem)}
+.roles{display:flex;flex-wrap:wrap;gap:8px}
+.role{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:10px 16px;font:500 .92rem var(--f-sans);cursor:pointer;color:var(--ink)}
+.role:hover{border-color:#BDBEC6}
+.role[aria-pressed="true"]{background:var(--black);color:#fff;border-color:var(--black)}
+.result{background:#F5F5F8;border-radius:var(--r-inner);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.result > div{min-width:0}
+.result h3{font-size:1.05rem;letter-spacing:-.01em;line-height:1.3}
+.file{font:400 .8rem var(--f-mono);color:var(--muted);word-break:break-all}
+.cvlang{display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--muted)}
+
+/* teal statement */
+.mission{background:var(--teal);color:#fff;justify-content:space-between}
+.mission .eyebrow{color:rgba(255,255,255,.75)}
+.mission h2{font-size:clamp(1.6rem,2.6vw,2.15rem);letter-spacing:-.03em;line-height:1.12}
+.mission .roles-list{display:flex;flex-wrap:wrap;gap:6px}
+.mission .roles-list span{font:500 .78rem var(--f-mono);padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.14)}
+
+/* evidence */
+.fact .num{font-size:clamp(2rem,3.4vw,2.8rem);font-weight:600;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.fact p{color:#45474E;font-size:.95rem}
+.tag{align-self:flex-start;font:500 .7rem/1 var(--f-mono);letter-spacing:.05em;text-transform:uppercase;padding:6px 9px;border-radius:999px;white-space:nowrap}
+.t-pro{background:#E9ECF4;color:#2C3D66}
+.t-int{background:var(--amber-soft);color:var(--amber-ink)}
+.t-ind{background:var(--violet-soft);color:var(--violet-ink)}
+.t-edu{background:#F0F0F3;color:var(--muted)}
+
+/* experience */
+.xp-title{justify-content:space-between}
+.xp-title h2{font-size:clamp(1.8rem,3vw,2.4rem)}
+.xp .org{font-size:1.25rem;font-weight:600;letter-spacing:-.02em;color:#8B8D95}
+.xp h3{font-size:1.08rem;letter-spacing:-.01em;line-height:1.3;color:var(--ink)}
+.xp .when{font:400 .82rem var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.xp p.d{font-size:.9rem;color:#45474E}
+.xp{justify-content:space-between}
+.xp .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}
+
+/* methods */
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:400 .82rem var(--f-mono);padding:6px 10px;border-radius:999px;background:#F2F2F5}
+.methods h2,.proj h2,.refs-h h2{font-size:1.5rem}
+
+/* projects */
+.proj h3{font-size:1.3rem;letter-spacing:-.02em;line-height:1.2}
+.proj .meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.proj p{font-size:.95rem;color:#45474E;max-width:62ch}
+.proj dl{display:grid;grid-template-columns:110px minmax(0,1fr);gap:6px 14px;margin:0;font-size:.88rem;background:#F5F5F8;border-radius:var(--r-inner);padding:14px 16px}
+.proj dt{color:var(--muted)}
+.proj dd{margin:0;min-width:0}
+@media (max-width:520px){.proj dl{grid-template-columns:minmax(0,1fr)}.proj dt{margin-top:4px}}
+
+/* references */
+.ref blockquote{margin:0;font-size:1.12rem;line-height:1.4;letter-spacing:-.01em;font-weight:500}
+.ref figcaption{font-size:.84rem;color:var(--muted);margin-top:auto}
+figure.ref{margin:0}
+
+/* video */
+.vid{padding:14px}
+.vframe{border-radius:20px;aspect-ratio:16/9;max-width:100%;background:linear-gradient(135deg,#1E1F24,#3A3B44);color:#fff;display:grid;place-items:center;text-align:center;padding:16px}
+.vframe .play{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;margin:0 auto 12px}
+.vmeta{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:6px 10px 4px;flex-wrap:wrap}
+
+/* contact */
+.contact{justify-content:space-between;gap:22px}
+.contact h2{font-size:clamp(2.6rem,5vw,4.2rem);letter-spacing:-.05em;line-height:.95}
+.mail{font:500 1.02rem var(--f-mono);user-select:all;word-break:break-all;text-transform:lowercase}
+.mailrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:22px 8px 0;color:var(--muted);font-size:.84rem}
+footer .brand{font-size:.8rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+
+/* ---- open sections: no cards, hairline rules ---- */
+.open{grid-column:span 12;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:24px 48px;padding:52px 8px 4px;border-top:1px solid #D4D4DA;margin-top:36px}
+.o-head{display:flex;flex-direction:column;gap:10px;align-self:start}
+.o-head h2{font-size:clamp(1.7rem,3vw,2.5rem);letter-spacing:-.035em}
+.textlink{font-weight:500;text-decoration:none;border-bottom:1.5px solid var(--ink);align-self:flex-start;padding-bottom:1px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.stat{padding:0 24px;border-left:1px solid #D4D4DA;display:flex;flex-direction:column;gap:12px}
+.stat:first-child{padding-left:0;border-left:0}
+.stat .num{font-size:clamp(1.9rem,3vw,2.6rem);font-weight:600;letter-spacing:-.045em;line-height:1.02;font-variant-numeric:tabular-nums}
+.stat .num small{font-size:.95rem;letter-spacing:0;font-weight:500;color:var(--muted)}
+.stat p{font-size:.93rem;color:#45474E}
+.rows{list-style:none;margin:0;padding:0}
+.row{display:grid;grid-template-columns:104px minmax(0,1fr) auto;gap:18px;padding:18px 0;border-bottom:1px solid #D4D4DA;align-items:start}
+.row:first-child{padding-top:4px}
+.row:last-child{border-bottom:0}
+.row .when{font:400 .84rem var(--f-mono);color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.row .what{display:flex;flex-direction:column;gap:3px;min-width:0}
+.row h3{font-size:1.14rem;letter-spacing:-.015em;line-height:1.3}
+.row .org{color:var(--muted);font-size:.92rem}
+.row .d{font-size:.92rem;color:#45474E;max-width:62ch;margin-top:4px}
+.groups{display:flex;flex-direction:column;gap:26px}
+.group{display:flex;flex-direction:column;gap:10px}
+.group .list{font-size:clamp(1.05rem,1.8vw,1.3rem);font-weight:500;letter-spacing:-.015em;line-height:1.45}
+.projects{display:flex;flex-direction:column}
+.project{padding:24px 0;border-bottom:1px solid #D4D4DA;display:flex;flex-direction:column;gap:10px}
+.project:first-child{padding-top:4px}
+.project:last-child{border-bottom:0}
+.project .meta{display:flex;gap:6px;flex-wrap:wrap}
+.project h3{font-size:clamp(1.25rem,2.2vw,1.55rem);letter-spacing:-.03em;line-height:1.2}
+.project p{font-size:.96rem;color:#45474E;max-width:64ch}
+.project .specs{font:400 .8rem var(--f-mono);color:var(--muted)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.quote{margin:0;border-top:2px solid var(--ink);padding-top:16px;display:flex;flex-direction:column;gap:14px}
+.quote blockquote{margin:0;font-size:1.08rem;line-height:1.42;font-weight:500;letter-spacing:-.01em}
+.quote figcaption{font-size:.84rem;color:var(--muted);margin-top:auto}
+.open .vframe{border-radius:22px}
+.open.contact{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:end;padding-bottom:20px}
+.open.contact h2{font-size:clamp(2.6rem,6vw,5.2rem);letter-spacing:-.055em;line-height:.95}
+.c-side{display:flex;flex-direction:column;gap:14px}
+.c-side .mail{font:500 1.1rem var(--f-mono)}
+.open .btn-light{background:#fff}
+.open .btn-light:hover{background:#F6F6F8}
+@media (max-width:860px){.open,.open.contact{grid-template-columns:minmax(0,1fr);gap:20px}.quotes{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.open{padding-top:40px;margin-top:24px}.stats{grid-template-columns:minmax(0,1fr)}.stat{padding:18px 0;border-left:0;border-top:1px solid #D4D4DA}.stat:first-child{border-top:0;padding-top:0}.row{grid-template-columns:minmax(0,1fr);gap:6px}.row .tag{order:-1}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="bento">
+
+  <!-- NAV -->
+  <header class="nav">
+    <a class="brand" href="#top" id="top-link"><span class="mark">SD</span>Serena Dagun</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#cv">CV</a>
+      <a href="#parcours"><span class="fr">Parcours</span><span class="en">Experience</span></a>
+      <a href="#projets"><span class="fr">Projets</span><span class="en">Projects</span></a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <div class="seg" role="group" aria-label="Langue / Language">
+        <button type="button" id="lang-fr" data-set-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" id="lang-en" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-black" href="#cv"><span class="fr">Mon CV</span><span class="en">My CV</span></a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="card hero s6" id="top">
+    <span class="avail"><span class="fr">Disponible · CDI</span><span class="en">Available · Permanent role</span></span>
+    <h1>
+      <span class="fr">Je suis Serena, ingénieure <span class="soft">sûreté &amp;</span> certification</span>
+      <span class="en">Hi, I'm Serena, a <span class="soft">safety &amp;</span> certification engineer</span>
+    </h1>
+    <p class="intro">
+      <span class="fr">Deux ans en navigabilité sur un programme de certification de drone cargo, un stage côté autorité à la DGCA indonésienne, puis six mois en sûreté de fonctionnement automobile (ISO 26262, SOTIF) chez SECTOR.</span>
+      <span class="en">Two years in airworthiness on a cargo drone certification programme, an internship on the authority side at the Indonesian DGCA, then six months of automotive functional safety (ISO 26262, SOTIF) at SECTOR.</span>
+    </p>
+    <div class="actions">
+      <a class="btn btn-black" href="#cv"><span class="fr">Choisir mon CV</span><span class="en">Get the right CV</span></a>
+      <a class="btn btn-light" href="#contact"><span class="fr">Me contacter</span><span class="en">Contact me</span></a>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="card profile s3">
+    <div>
+      <h3>Serena Dagun</h3>
+      <p class="muted" style="font-size:.9rem"><span class="fr">Valenciennes (59) · mobile en France</span><span class="en">Valenciennes, France · open to relocation</span></p>
+    </div>
+    <div class="route" aria-label="Career route">
+      <div class="stop"><span><span class="fr">Aéronautique</span><span class="en">Aerospace</span></span><span class="yr">2021-24</span></div>
+      <div class="stop"><span><span class="fr">Automobile</span><span class="en">Automotive</span></span><span class="yr">2026</span></div>
+      <div class="stop now"><span><strong><span class="fr">Ferroviaire</span><span class="en">Railway</span></strong></span><span class="yr"><span class="fr">cible</span><span class="en">next</span></span></div>
+    </div>
+    <div class="langs"><span class="pill">ID</span><span class="pill">EN C1</span><span class="pill">FR B1</span></div>
+  </div>
+
+  <!-- PHOTO: put your photo next to index.html, named photo.jpg -->
+  <div class="card photo s3">
+    <div class="fallback" aria-hidden="true">SD</div>
+    <img src="photo.jpg" alt="Serena Dagun" onerror="this.remove()">
+  </div>
+
+  <!-- STANDARDS -->
+  <div class="card stds s4">
+    <p class="eyebrow"><span class="fr">Normes appliquées en entreprise</span><span class="en">Standards applied at work</span></p>
+    <div class="row"><span>ISO 26262</span><span>SOTIF</span><span>ARP4761</span><span>ARP4754A</span><span>CASR 21 · 22 · 23</span></div>
+  </div>
+
+  <!-- LINK CIRCLES -->
+  <div class="card links s2" aria-label="Links">
+    <a class="circle" href="https://www.linkedin.com/in/serenadagun" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3 2.8-4.8 5.5-4.8s4.9 1.8 5.5 4.8"/><path d="M16 11.5h5M18.5 9v5"/></svg></span>LinkedIn</a>
+    <a class="circle" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13.5 5l-3 14"/></svg></span>GitHub</a>
+    <a class="circle" href="#contact" aria-label="Email">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg></span>Email</a>
+    <a class="circle" href="#cv" aria-label="CV">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>CV</a>
+  </div>
+
+  <!-- CV SELECTOR -->
+  <section class="card cvsel s7" id="cv" aria-labelledby="cv-h">
+    <p class="eyebrow">CV · PDF</p>
+    <h2 id="cv-h"><span class="fr">Pour quel poste recrutez-vous ?</span><span class="en">What role are you hiring for?</span></h2>
+    <div class="roles" role="group" aria-label="Role">
+      <button class="role" type="button" id="role-rail" data-role="rail" aria-pressed="true"><span class="fr">Ferroviaire</span><span class="en">Railway</span></button>
+      <button class="role" type="button" id="role-aero" data-role="aero" aria-pressed="false"><span class="fr">Aéronautique</span><span class="en">Aerospace</span></button>
+      <button class="role" type="button" id="role-auto" data-role="auto" aria-pressed="false"><span class="fr">Automobile</span><span class="en">Automotive</span></button>
+      <button class="role" type="button" id="role-gen" data-role="gen" aria-pressed="false"><span class="fr">Autre poste</span><span class="en">Other role</span></button>
+    </div>
+    <div class="cvlang">
+      <span><span class="fr">Langue du CV</span><span class="en">CV language</span></span>
+      <div class="seg" role="group" aria-label="CV language">
+        <button type="button" id="cvlang-fr" data-cvlang="fr" aria-pressed="true">FR</button>
+        <button type="button" id="cvlang-en" data-cvlang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <div class="result" aria-live="polite">
+      <div>
+        <h3 id="cv-title">CV Ferroviaire · RAMS et certification</h3>
+        <p class="file" id="cv-file">cv/CV_DAGUN_Ferroviaire_FR.pdf</p>
+        <p id="cv-note" class="muted" style="font-size:.85rem;margin-top:4px" hidden></p>
+      </div>
+      <a class="btn btn-black" id="cv-link" href="cv/CV_DAGUN_Ferroviaire_FR.pdf" target="_blank" rel="noopener"><span class="fr">Ouvrir le PDF</span><span class="en">Open PDF</span></a>
+    </div>
+    <p class="muted" style="font-size:.85rem"><span class="fr">Toutes les versions contiennent les mêmes faits ; seul l'ordre change selon le secteur.</span><span class="en">Every version contains the same facts; only the emphasis changes by sector.</span></p>
+  </section>
+
+  <!-- MISSION -->
+  <div class="card mission s5">
+    <p class="eyebrow"><span class="fr">Ce que je recherche</span><span class="en">What I am looking for</span></p>
+    <h2><span class="fr">Un CDI en RAMS, certification ou sécurité fonctionnelle, idéalement dans le ferroviaire.</span><span class="en">A permanent RAMS, certification or functional safety role, ideally in rail.</span></h2>
+    <div class="roles-list"><span><span class="fr">Ingénieure RAMS</span><span class="en">RAMS engineer</span></span><span><span class="fr">Certification ferroviaire</span><span class="en">Rail certification</span></span><span><span class="fr">Sécurité fonctionnelle</span><span class="en">Functional safety</span></span><span><span class="fr">Ingénierie système</span><span class="en">Systems engineering</span></span></div>
+  </div>
+
+  <!-- ================= OPEN SECTIONS (no cards below this line) ================= -->
+
+  <!-- EVIDENCE -->
+  <section class="open" aria-labelledby="ev-h">
+    <div class="o-head">
+      <p class="eyebrow"><span class="fr">En bref</span><span class="en">At a glance</span></p>
+      <h2 id="ev-h"><span class="fr">Trois résultats concrets</span><span class="en">Three concrete results</span></h2>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <span class="tag t-pro"><span class="fr">Expérience pro</span><span class="en">Professional</span></span>
+        <span class="num">DOA 75&nbsp;%<br>TC 50&nbsp;%</span>
+        <p><span class="fr">Avancement de la demande d'agrément DOA et du certificat de type d'un drone cargo de 25 kg (CASR Part 22).</span><span class="en">Progress on the Design Organisation Approval and type certificate of a 25 kg cargo drone (CASR Part 22).</span></p>
+      </div>
+      <div class="stat">
+        <span class="tag t-int"><span class="fr">Stage</span><span class="en">Internship</span></span>
+        <span class="num">ASIL C<br>→ 7 FSR</span>
+        <p><span class="fr">Un objectif de sécurité ASIL C décliné en 7 exigences de sécurité fonctionnelle (étude de cas, bus électrique).</span><span class="en">One ASIL C safety goal broken down into 7 functional safety requirements (case study, electric bus).</span></p>
+      </div>
+      <div class="stat">
+        <span class="tag t-int"><span class="fr">Stage autorité</span><span class="en">Authority internship</span></span>
+        <span class="num">~300<br><small><span class="fr">dossiers</span><span class="en">records</span></small></span>
+        <p><span class="fr">Dossiers de certification vérifiés dans la base nationale de la DGCA, plus un rapport d'évaluation DOA Classe C.</span><span class="en">Certification records checked in the DGCA national database, plus a DOA Class C evaluation report.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="open" id="parcours" aria-labelledby="xp-h">
+    <div class="o-head">
+      <p class="eyebrow"><span class="fr">Parcours</span><span class="en">Experience</span></p>
+      <h2 id="xp-h"><span class="fr">De l'autorité au bureau d'études</span><span class="en">From authority to design office</span></h2>
+      <a class="textlink" href="#cv"><span class="fr">Voir le CV complet →</span><span class="en">See the full CV →</span></a>
+    </div>
+    <ol class="rows">
+      <li class="row">
+        <span class="when">02-08/2026</span>
+        <div class="what">
+          <h3><span class="fr">Ingénieure RAMS, stage de fin d'études</span><span class="en">RAMS Engineer, end-of-studies internship</span></h3>
+          <p class="org">SECTOR Group · Villeurbanne</p>
+          <p class="d"><span class="fr">ISO 26262 (parties 3 et 4), SOTIF. APR, arbres de défaillances, AMDEC conception sur la VMU.</span><span class="en">ISO 26262 (Parts 3 and 4), SOTIF. PHA, fault trees, design FMEA on the VMU.</span></p>
+        </div>
+        <span class="tag t-int"><span class="fr">Stage</span><span class="en">Internship</span></span>
+      </li>
+      <li class="row">
+        <span class="when">2024-2026</span>
+        <div class="what">
+          <h3>Master International in Transportation and Energy</h3>
+          <p class="org">INSA Hauts-de-France · Valenciennes</p>
+        </div>
+        <span class="tag t-edu"><span class="fr">Formation</span><span class="en">Education</span></span>
+      </li>
+      <li class="row">
+        <span class="when">2022-2024</span>
+        <div class="what">
+          <h3>Junior Airworthiness Engineer</h3>
+          <p class="org">PT Iter Aero Industri · Bandung</p>
+          <p class="d"><span class="fr">Temps partiel en 2022, CDI temps plein en 2023. Plan de certification, liste de conformité, revue FHA et PSSA, liaison avec l'autorité.</span><span class="en">Part-time in 2022, full-time permanent from 2023. Certification plan, compliance checklist, FHA and PSSA review, liaison with the authority.</span></p>
+        </div>
+        <span class="tag t-pro"><span class="fr">Expérience pro</span><span class="en">Professional</span></span>
+      </li>
+      <li class="row">
+        <span class="when">2018-2023</span>
+        <div class="what">
+          <h3>BSc Aerospace Engineering</h3>
+          <p class="org">Institut Teknologi Bandung</p>
+        </div>
+        <span class="tag t-edu"><span class="fr">Formation</span><span class="en">Education</span></span>
+      </li>
+      <li class="row">
+        <span class="when">06-08/2021</span>
+        <div class="what">
+          <h3><span class="fr">Stagiaire ingénieure certification</span><span class="en">Aircraft certification intern</span></h3>
+          <p class="org"><span class="fr">DGCA Indonésie (équivalent de la DGAC) · Tangerang</span><span class="en">DGCA Indonesia (civil aviation authority) · Tangerang</span></p>
+          <p class="d"><span class="fr">Côté autorité : écarts entre réglementation et réalité opérationnelle.</span><span class="en">Authority side: gaps between regulation and operational reality.</span></p>
+        </div>
+        <span class="tag t-int"><span class="fr">Stage</span><span class="en">Internship</span></span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- METHODS -->
+  <section class="open" aria-labelledby="m-h">
+    <div class="o-head">
+      <p class="eyebrow"><span class="fr">Méthodes</span><span class="en">Methods</span></p>
+      <h2 id="m-h"><span class="fr">Appliqué, et en apprentissage</span><span class="en">Applied, and in progress</span></h2>
+    </div>
+    <div class="groups">
+      <div class="group">
+        <span class="tag t-pro"><span class="fr">Appliqué en entreprise</span><span class="en">Applied at work</span></span>
+        <p class="list">HARA · APR / PHA · FTA · AMDEC / FMEA · FHA · PSSA · DOA · <span class="fr">plans de certification · listes de conformité</span><span class="en">certification plans · compliance checklists</span></p>
+      </div>
+      <div class="group">
+        <span class="tag t-ind"><span class="fr">Auto-formation et portfolio</span><span class="en">Self-study and portfolio</span></span>
+        <p class="list">EN 50126 · EN 50129 · EN 50128 · IEC 61508 · Capella / Arcadia</p>
+      </div>
+      <div class="group">
+        <span class="tag t-edu"><span class="fr">Outils</span><span class="en">Tools</span></span>
+        <p class="list">Python · MATLAB · <span class="fr">Excel avancé</span><span class="en">advanced Excel</span> · Adams View</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="open" id="projets" aria-labelledby="p-h">
+    <div class="o-head">
+      <p class="eyebrow"><span class="fr">Projets</span><span class="en">Projects</span></p>
+      <h2 id="p-h"><span class="fr">Travaux techniques</span><span class="en">Technical work</span></h2>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <div class="meta"><span class="tag t-ind"><span class="fr">Projet personnel</span><span class="en">Independent project</span></span><span class="tag t-edu"><span class="fr">En cours</span><span class="en">In progress</span></span></div>
+        <h3><span class="fr">Unité de contrôle de porte (DCU) : dossier sécurité</span><span class="en">Train Door Control Unit: safety dossier</span></h3>
+        <p><span class="fr">Analyse de sécurité d'une fonction porte voyageurs générique selon EN 50126 et EN 50129, puis modèle MBSE et traçabilité des exigences. Données génériques uniquement.</span><span class="en">Safety analysis of a generic passenger door function following EN 50126 and EN 50129, then an MBSE model and requirements traceability. Generic data only.</span></p>
+        <p class="specs"><span class="fr">Dangers · matrice de risque · THR et SIL · FTA · SRAC · Capella</span><span class="en">Hazards · risk matrix · THR and SIL · FTA · SRACs · Capella</span></p>
+      </article>
+      <article class="project">
+        <div class="meta"><span class="tag t-int"><span class="fr">Stage</span><span class="en">Internship</span></span><span class="tag t-edu"><span class="fr">Terminé</span><span class="en">Done</span></span></div>
+        <h3><span class="fr">Étude de cas ISO 26262 : décélération intempestive</span><span class="en">ISO 26262 case study: unintended deceleration</span></h3>
+        <p><span class="fr">Objectif « éviter une décélération non voulue causant une instabilité » décliné en 7 exigences sur la VMU, côté retarder et propulsion. Réalisé sur données de référence, pas un livrable client.</span><span class="en">Goal "avoid unintended vehicle deceleration causing instability" broken down into 7 requirements on the VMU, retarder and propulsion paths. Done on reference data, not a client deliverable.</span></p>
+        <p class="specs">HARA · APR · FTA · AMDEC · <span class="fr">réf. A. Foggea, SECTOR</span><span class="en">ref. A. Foggea, SECTOR</span></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="open" aria-labelledby="r-h">
+    <div class="o-head">
+      <p class="eyebrow"><span class="fr">Recommandations</span><span class="en">References</span></p>
+      <h2 id="r-h"><span class="fr">Ce qu'en disent mes encadrants</span><span class="en">What my supervisors say</span></h2>
+      <p class="muted" style="font-size:.88rem"><span class="fr">Lettres complètes sur demande.</span><span class="en">Full letters on request.</span></p>
+    </div>
+    <div class="quotes">
+      <figure class="quote">
+        <blockquote><span class="fr">« A su présenter les résultats et l'avancement de son travail de façon autonome. »</span><span class="en">"Able to present the results and progress of her work independently."</span></blockquote>
+        <figcaption>Anthony Foggea<br><span class="fr">Ingénieur RAMS et chef de projet, SECTOR</span><span class="en">RAMS Engineer and Project Manager, SECTOR</span></figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>"Excellent at maintaining exceptional relations both for the external DAAO part and the internal team."</blockquote>
+        <figcaption>Heru Yudanarsa<br>Head of Airworthiness Office, Iter Aero</figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>"Acts as a liaison officer between the Iter Aero engineering team and the DGCA certifying team."</blockquote>
+        <figcaption>Dr Hisar M. Pasaribu<br>ITB · Head of Design Organisation, Iter Aero</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- VIDEO (Phase 2: delete this whole section until the video exists) -->
+  <section class="open" aria-labelledby="v-h">
+    <div class="o-head">
+      <p class="eyebrow">Vidéo</p>
+      <h2 id="v-h"><span class="fr">Me présenter en 75 secondes</span><span class="en">My background in 75 seconds</span></h2>
+      <p class="muted" style="font-size:.9rem"><span class="fr">Optionnel : tout ce que je dis figure aussi sur cette page. Sous-titres FR et EN.</span><span class="en">Optional: everything I say is also on this page. French and English subtitles.</span></p>
+    </div>
+    <div class="vframe" role="img" aria-label="Video placeholder">
+      <div><div class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div><strong><span class="fr">Présentation vidéo · 75 s</span><span class="en">Video introduction · 75 s</span></strong></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="open contact" id="contact" aria-labelledby="c-h">
+    <h2 id="c-h"><span class="fr">Parlons de votre besoin.</span><span class="en">Let's talk about your role.</span></h2>
+    <div class="c-side">
+      <p class="muted"><span class="fr">Réponse sous 24 h ouvrées. Entretiens en français ou en anglais, sur site dans les Hauts-de-France ou en visio.</span><span class="en">Reply within one working day. Interviews in French or English, on site in Hauts-de-France or by video call.</span></p>
+      <span class="mail" id="mail">serenadagun@gmail.com</span>
+      <div class="mailrow">
+        <button class="btn btn-black" type="button" id="copy-mail"><span class="fr">Copier l'email</span><span class="en">Copy email</span></button>
+        <a class="btn btn-light" href="https://www.linkedin.com/in/serenadagun" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <span class="brand"><span class="mark" style="width:26px;height:26px;font-size:.66rem">SD</span>Serena Dagun</span>
+  <span><span class="fr">Mise à jour : octobre 2026 · Aucun cookie · </span><span class="en">Updated October 2026 · No cookies · </span><a href="mentions-legales.html"><span class="fr">Mentions légales</span><span class="en">Legal notice</span></a></span>
+</footer>
+</div>
+
+<script>
+(function(){
+  /* ---- EDIT HERE: your CV files. Titles shown to recruiters + exact file names in the cv/ folder ---- */
+  var CVS = {
+    rail:{fr:{t:"CV Ferroviaire · RAMS et certification",f:"CV_DAGUN_Ferroviaire_FR.pdf"},en:{t:"Railway CV · RAMS and certification",f:"CV_DAGUN_Railway_EN.pdf"}},
+    aero:{fr:{t:"CV Aéronautique · navigabilité et certification",f:"CV_DAGUN_Aeronautique_FR.pdf"},en:{t:"Aerospace CV · airworthiness and certification",f:"CV_DAGUN_Aerospace_EN.pdf"}},
+    auto:{fr:{t:"CV Automobile · sécurité fonctionnelle",f:"CV_DAGUN_Automobile_FR.pdf"},en:{t:"Automotive CV · functional safety",f:"CV_DAGUN_Automotive_EN.pdf"}},
+    gen:{fr:{t:"CV Général · sûreté et certification",f:"CV_DAGUN_General_FR.pdf"},en:{t:"General CV · safety and certification",f:"CV_DAGUN_General_EN.pdf"}}
+  };
+  /* ---- EDIT HERE: files you have NOT uploaded yet, and which file to show instead. Delete a line once you upload that file. ---- */
+  var MISSING = {
+    "CV_DAGUN_Railway_EN.pdf":"CV_DAGUN_General_EN.pdf",
+    "CV_DAGUN_Aerospace_EN.pdf":"CV_DAGUN_General_EN.pdf",
+    "CV_DAGUN_Automotive_EN.pdf":"CV_DAGUN_General_EN.pdf",
+    "CV_DAGUN_General_FR.pdf":"CV_DAGUN_Ferroviaire_FR.pdf"
+  };
+  var state = {role:"rail", cvlang:"fr"};
+  function render(){
+    var c = CVS[state.role][state.cvlang], file = c.f, note = document.getElementById("cv-note");
+    if (MISSING[file] && state.role==="gen") { file = MISSING[file]; note.hidden = true; }
+    else if (MISSING[file]) { file = MISSING[file]; note.hidden = false;
+      note.textContent = state.cvlang==="fr" ? "Version spécifique en préparation : voici le CV général." : "Sector-specific version in preparation: here is the general CV.";
+    } else { note.hidden = true; }
+    document.getElementById("cv-title").textContent = c.t;
+    document.getElementById("cv-file").textContent = "cv/" + file;
+    document.getElementById("cv-link").href = "cv/" + file;
+    document.querySelectorAll("[data-role]").forEach(function(b){b.setAttribute("aria-pressed", b.dataset.role===state.role)});
+    document.querySelectorAll("[data-cvlang]").forEach(function(b){b.setAttribute("aria-pressed", b.dataset.cvlang===state.cvlang)});
+  }
+  function setLang(l){
+    document.documentElement.dataset.lang = l; document.documentElement.lang = l;
+    document.querySelectorAll("[data-set-lang]").forEach(function(b){b.setAttribute("aria-pressed", b.dataset.setLang===l)});
+    state.cvlang = l; render();
+    try{localStorage.setItem("lang",l)}catch(e){}
+  }
+  document.querySelectorAll("[data-role]").forEach(function(b){b.addEventListener("click",function(){state.role=b.dataset.role;render()})});
+  document.querySelectorAll("[data-cvlang]").forEach(function(b){b.addEventListener("click",function(){state.cvlang=b.dataset.cvlang;render()})});
+  document.querySelectorAll("[data-set-lang]").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.setLang)})});
+  document.getElementById("copy-mail").addEventListener("click",function(){
+    var btn=this, el=document.getElementById("mail"), txt=el.textContent;
+    function done(){btn.querySelector(".fr").textContent="Copié";btn.querySelector(".en").textContent="Copied"}
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+    if(navigator.clipboard){navigator.clipboard.writeText(txt).then(done,sel)}else{sel()}
+  });
+  var saved=null; try{saved=localStorage.getItem("lang")}catch(e){}
+  if (location.hash==="#en") saved="en";
+  setLang(saved || ((navigator.language||"fr").slice(0,2)==="fr" ? "fr" : "en"));
+})();
+</script>
+</body>
+</html>
